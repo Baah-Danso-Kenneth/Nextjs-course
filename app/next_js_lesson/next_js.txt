@@ -1,0 +1,9 @@
+Routings
+***********
+This is the directions to a particular website or page.
+
+Create Folder/
+   eg: about/page.js
+
+localhost:3000/about 
+which take you the path ie. about can be any name being prefferred.
