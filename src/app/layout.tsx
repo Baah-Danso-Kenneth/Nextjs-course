@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import './globals.css';
+
 
 
 
@@ -16,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body className="bg-white dark:bg-[#1A1C29]">
+    
         {children}
       </body>
     </html>
