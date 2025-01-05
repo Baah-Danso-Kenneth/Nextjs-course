@@ -7,6 +7,9 @@ module.exports = {
 	  ],
   theme: {
   	extend: {
+		flex:{
+			full: "0 0 100%",
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
