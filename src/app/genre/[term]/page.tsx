@@ -1,3 +1,5 @@
+import MovieCarousel from "@/components/MovieCarousel";
+import { getDiscoverMovies } from "@/lib/getMovies";
 
 type Props = {
     params: {
@@ -8,10 +10,15 @@ type Props = {
     }
 }
 
-function page({ params: { term}, searchParams: {genre} }: Props) {
-
+async function page({ params: { term}, searchParams: {genre} }: Props) {
+  const movies = await getDiscoverMovies(term)
   return (
-    <div>This is the genre {term} and parmas: {genre} </div>
+    <div className="max-w-7xl mx-auto">
+       <div className="flex flex-col space-y-5 mt-32 xl:mt-32 ">
+        <h1>Results for {genre}</h1>
+        <MovieCarousel title="Genre" movies={movies} isVertical/>
+       </div>
+       </div>
   )
 }
 
