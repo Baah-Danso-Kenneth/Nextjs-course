@@ -10,12 +10,10 @@ type Props = {
 
 function MovieCarousel({title, movies, isVertical}:Props) {
   return (
-    <div className="z-50">
+    <div className="z-50 ">
         <h1 className="text-2xl">{title}</h1>
 
-
-
-      <div className={cn("flex space-x-4 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide", isVertical && "flex-col space-x-0")}>
+      <div className={cn("flex space-x-4 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide overflow-y-hidden", isVertical && "flex-col space-x-0")}>
 
         {isVertical 
         ?
