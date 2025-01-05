@@ -8,7 +8,7 @@ import GenreDropDown from '@/GenreDropDown'
 
 function Header() {
   return (
-    <header className='flex sticky w-full top-0 justify-between items-center'>
+    <header className='flex sticky w-full top-0 justify-between items-center z-50'>
         <Link href="/">
           <Image src="https://links.papareact.com/a943ae" 
            alt="disney logo"
