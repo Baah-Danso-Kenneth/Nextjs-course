@@ -1,4 +1,4 @@
-import MovieCarousel from "@/components/MovieCarousel";
+import MovieCarousel from "@/components/desney/MovieCarousel";
 import { getDiscoverMovies } from "@/lib/getMovies";
 
 type Props = {

@@ -42,7 +42,7 @@ async function GenreDropDown() {
         {data?.genres?.length > 0 ? (
           data.genres.map(({ id, name }) => (
             <DropdownMenuItem key={id}>
-              <Link href={`/genre/${id}?genre=${name}`}>{name}</Link>
+              <Link href={`/desney/genre/${id}?genre=${name}`}>{name}</Link>
             </DropdownMenuItem>
           ))
         ) : (

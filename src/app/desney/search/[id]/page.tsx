@@ -1,6 +1,6 @@
 import MovieCarousel from '@/components/desney/MovieCarousel'
 import { getPopularMovies, getSearchMovies } from '@/lib/getMovies'
-
+import React from 'react'
 
 type Props={
     params:{

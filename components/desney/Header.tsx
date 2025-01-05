@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { ThemeToggler } from './desney/ThemeToggler'
-import SearchInput from './desney/SearchInput'
+import { ThemeToggler } from './ThemeToggler'
+import SearchInput from './SearchInput'
 import GenreDropDown from '@/GenreDropDown'
 
 

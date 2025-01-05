@@ -4,8 +4,9 @@ import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { FormControl, FormField, FormItem, Form } from "../components/ui/form";
-import { Input } from "./ui/input";
+import { Input } from "../ui/input";
+import { FormField, FormItem, FormControl, Form } from "../ui/form";
+
 
 
 const formSchema = z.object({
@@ -23,7 +24,7 @@ function SearchInput() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    router.push(`/search/${values.input}`);
+    router.push(`/desney/search/${values.input}`);
     form.reset()
   }
 

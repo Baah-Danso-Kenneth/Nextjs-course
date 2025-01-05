@@ -1,6 +1,5 @@
-import CarouselBanner from '@/components/CarouselBanner';
-import CarouselBannerWrapper from '@/components/CarouselBannerWrapper';
-import MovieCarousel from '@/components/MovieCarousel'
+import CarouselBannerWrapper from '@/components/desney/CarouselBannerWrapper';
+import MovieCarousel from '@/components/desney/MovieCarousel'
 import { getPopularMovies, getTopRatedMovies, getUpcomingMovies } from '@/lib/getMovies';
 import React from 'react'
 

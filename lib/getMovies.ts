@@ -28,7 +28,6 @@ async function fetchFromTMDB(url:URL, cacheTime?:number) {
 export async function getUpcomingMovies(){
     const url = new URL("https://api.themoviedb.org/3/movie/upcoming");
     const data = await fetchFromTMDB(url);
-    console.log(data)
 
     return data.results;
 }
