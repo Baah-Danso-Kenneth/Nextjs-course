@@ -1,3 +1,5 @@
+import CarouselBanner from '@/components/CarouselBanner';
+import CarouselBannerWrapper from '@/components/CarouselBannerWrapper';
 import MovieCarousel from '@/components/MovieCarousel'
 import { getPopularMovies, getTopRatedMovies, getUpcomingMovies } from '@/lib/getMovies';
 import React from 'react'
@@ -11,7 +13,7 @@ async function Home() {
 
   return (
     <main>
-
+      <CarouselBannerWrapper/>
        <div>
         <MovieCarousel movies={upcomingMovies} title='upcoming' isVertical/>
         <MovieCarousel movies={topRatedMovies} title='top rated'/>
