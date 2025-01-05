@@ -1,8 +1,26 @@
+import CarouselBannerWrapper from '@/components/desney/CarouselBannerWrapper';
+import MovieCarousel from '@/components/desney/MovieCarousel'
+import { getPopularMovies, getTopRatedMovies, getUpcomingMovies } from '@/lib/getMovies';
 import React from 'react'
 
-function Home() {
+
+async function Home() {
+  const upcomingMovies = await getUpcomingMovies();
+  const topRatedMovies = await getTopRatedMovies();
+  const popularMovies = await getPopularMovies();
+
+
   return (
-    <div>Home</div>
+    <main>
+      <CarouselBannerWrapper/>
+       <div>
+        <MovieCarousel movies={upcomingMovies} title='upcoming' isVertical/>
+        <MovieCarousel movies={topRatedMovies} title='top rated'/>
+        <MovieCarousel movies={popularMovies} title='popular'/>
+
+       </div>
+
+      </main>
   )
 }
 

@@ -1,11 +1,15 @@
 module.exports = {
     darkMode: ["class"],
-    content: [
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+	content: [
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}", 
+		
+	  ],
   theme: {
   	extend: {
+		flex:{
+			full: "0 0 100%",
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -55,5 +59,5 @@ module.exports = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar-hide")],
 };

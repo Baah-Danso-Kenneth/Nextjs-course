@@ -4,15 +4,14 @@ import * as React from "react"
 import { Moon, MoonIcon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
-
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu"
 
-import Button from '../components/ui/button'
 export function ThemeToggler() {
   const { setTheme } = useTheme()
 
